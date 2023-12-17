@@ -4,7 +4,7 @@ import Post from "../components/Post"
 const IndexPage = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch('https://typequest-server.onrender.com/post').then(response => {
+    fetch('http://localhost:4000/post').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });

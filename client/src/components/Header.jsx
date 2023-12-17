@@ -5,7 +5,7 @@ import { UserContext } from "../UserContext";
 const Header = () => {
     const { setUserInfo, userInfo } = useContext(UserContext)
     useEffect(() => {
-        fetch('https://typequest-server.onrender.com/profile', {
+        fetch('http://localhost:4000/profile', {
             credentials: "include"
         }).then(responce => {
             responce.json().then(userInfo => {
@@ -15,7 +15,7 @@ const Header = () => {
     }, [setUserInfo]);
 
     function logout() {
-        fetch('https://typequest-server.onrender.com/logout', {
+        fetch('http://localhost:4000/logout', {
             credentials: 'include',
             method: 'POST'
         })
