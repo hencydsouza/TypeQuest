@@ -15,7 +15,7 @@ Login Screen
 
 post Screen
 ![post Screenshot](./screenshots/post.png)
-## Server Deployment
+## Run server locally 
 
 To run the server side code first,
 
@@ -35,7 +35,7 @@ Run the server
   npm run dev
 ```
 
-## Client Deployment
+## Run client locally
 
 To run the client side code first,
 
