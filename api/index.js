@@ -14,7 +14,7 @@ const fs = require('fs');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'XXXXXXXXX'
 
-app.use(cors({ credentials: true, origin: 'https://typequest.onrender.com/' }));
+app.use(cors({ credentials: true, origin: 'https://typequest.onrender.com' }));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/Uploads', express.static(__dirname + '/Uploads'));
